@@ -1,0 +1,48 @@
+.bg-transparent {
+  background-color: transparent;
+  color: white;
+}
+
+button {
+  margin-left: 25px;
+}
+
+.example-card {
+  max-width: 280px;
+  margin: 0 auto;
+
+}
+.example-header-image {
+  background-image: url(https://static.listionary.com/core/img/default-user.png);
+  background-size: cover;
+  height: 35px;
+  width: 35px;
+  margin-right: 9px;
+}
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.example-icon {
+  padding: 0 14px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.header {
+  height: 10vh !important;
+}
+
+span {
+  font-size: 15px;
+}
+

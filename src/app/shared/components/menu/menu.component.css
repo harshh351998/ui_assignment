@@ -1,0 +1,70 @@
+.mat-card-icon {
+  padding: 0 14px;
+}
+
+.mat-card {
+  max-width: 130px;
+  margin: 0 auto;
+  top: 95px;
+}
+
+.mat-card-header-image {
+  background-image: url('https://static.listionary.com/core/img/default-user.png');
+  background-size: cover;
+}
+
+.mat-card-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.mat-card-full-width {
+  width: 100%;
+}
+
+.mat-card-spacer {
+  flex: 1 1 auto;
+}
+
+.mat-card-header-image {
+  background-image: url(https://static.listionary.com/core/img/default-user.png);
+  background-size: cover;
+  height: 35px;
+  width: 35px;
+  margin-right: 9px;
+}
+
+.bg-transparent {
+  background-color: transparent;
+  color: white;
+}
+
+.header {
+  height: 10vh !important;
+}
+
+button {
+  margin-left: 25px;
+}
+
+span {
+  font-size: 15px;
+}
+
+
+.inline {
+  display: inline-flex;
+  width: 100%;
+}
+
+button {
+  width: 100%;
+}
+
+.card-footer {
+  margin-bottom: -8px;
+  margin-top: -35px;
+  text-align: center;
+  padding-bottom: 0;
+}

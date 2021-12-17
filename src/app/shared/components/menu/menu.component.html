@@ -1,0 +1,29 @@
+<div class="inline">
+
+  <mat-card *ngIf="currentUser.role == 'admin'" class="mat-card">
+    <img mat-card-image src="https://cdn.pixabay.com/photo/2018/11/13/22/01/instagram-3814082__340.png" alt="Photo of a Shiba Inu">
+    <mat-card-content>
+    </mat-card-content>
+    <mat-card-actions class="card-footer">
+      <button [routerLink]="['/register']" mat-button>Create User</button>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-card class="mat-card">
+    <img mat-card-image src="https://cdn.pixabay.com/photo/2018/11/13/22/01/instagram-3814081__340.png" alt="Photo of a Shiba Inu">
+    <mat-card-content>
+    </mat-card-content>
+    <mat-card-actions class="card-footer">
+      <button [routerLink]="['/users']" mat-button>View User</button>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-card class="mat-card">
+    <img mat-card-image src="https://cdn.pixabay.com/photo/2017/03/21/01/59/gear-2160908__340.png" alt="Photo of a Shiba Inu">
+    <mat-card-content>
+    </mat-card-content>
+    <mat-card-actions class="card-footer">
+      <button [routerLink]="['/update', currentUser.id]" mat-button>Configuration</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

@@ -1,0 +1,12 @@
+.header-image {
+    background-image: url(https://www.articque.com/wp-content/themes/articque/images/backgrounds/header/art-header-main/full/r_atr-header-main.jpg);
+    background-size: cover;
+    height: 55vh;
+    width: 100%;
+    margin-right: 9px;
+    top: -190px;
+    position: absolute;
+    z-index: -1;
+  }
+
+  

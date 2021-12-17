@@ -1,0 +1,56 @@
+<alert></alert>
+
+<div class="container-login">
+  <mat-card class="mat-card">
+    <div id="img-profile" mat-card-avatar class="mat-card-header-image"></div>
+    <mat-card-content>
+      <mat-card-title id="title-card">Create Users.</mat-card-title>
+
+      <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+        <mat-form-field class="mat-card-full-width">
+          <input matInput placeholder="First Name" type="text" formControlName="firstName" [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }">
+          <mat-error *ngIf="f.firstName.errors && f.firstName.errors.required">
+            First Name is required
+          </mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="mat-card-full-width">
+          <input matInput placeholder="Last Name" type="text" formControlName="lastName" [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }">
+          <mat-error *ngIf="f.lastName.errors && f.lastName.errors.required">
+            Last Name is required
+          </mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="mat-card-full-width">
+          <input matInput placeholder="Email" type="text" formControlName="email" [ngClass]="{ 'is-invalid': submitted && f.email.errors }">
+          <mat-error *ngIf="f.email.errors && f.email.errors.required">
+            Email is required
+          </mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="mat-card-full-width">
+          <input matInput placeholder="Password" type="password"  formControlName="password" [ngClass]="{ 'is-invalid': submitted && f.password.errors }">
+          <mat-error *ngIf="f.password.errors && f.password.errors.required">
+            Password is required
+          </mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="mat-card-full-width">
+          <mat-select placeholder="Role" formControlName="role" [ngClass]="{ 'is-invalid': submitted && f.password.errors }">
+            <mat-option value="admin">Admin</mat-option>
+            <mat-option value="user">User</mat-option>
+          </mat-select>
+          <mat-error *ngIf="f.role.errors && f.role.errors.required">
+            Role is required
+          </mat-error>
+        </mat-form-field>
+
+        <mat-card-actions class="text-align-center">
+          <button [disabled]="loading || f.firstName.errors || f.email.errors ||f.password.errors || f.role.errors  " mat-raised-button color="primary">Sign In</button>
+          <img *ngIf="loading " src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
+          <button [routerLink]="['']" mat-raised-button color="warn">Cancel</button>
+        </mat-card-actions>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>

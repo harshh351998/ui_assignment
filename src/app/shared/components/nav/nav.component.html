@@ -1,0 +1,14 @@
+<mat-toolbar class="bg-transparent">
+  <mat-toolbar-row>
+    <span>{{currentUser.role}} Account</span>
+    <button color="warm" [routerLink]="['']" mat-raised-button color="basic">Home</button>
+    <span class="mat-card-spacer"></span>
+    <div mat-card-avatar class="mat-card-header-image"></div>
+    <span>{{currentUser.firstName}} {{currentUser.lastName}}</span>
+    <button color="warm" [routerLink]="['/login']" mat-raised-button color="warn">Logout</button>
+  </mat-toolbar-row>
+</mat-toolbar>
+  
+
+  
+  

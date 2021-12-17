@@ -1,0 +1,33 @@
+.mat-form-field {
+  text-align: center;
+  position: relative;
+  margin-left: 45%;
+}
+
+.example-card {
+  top: 125px;
+  margin-left: 45%;
+  position: relative;
+}
+
+.mat-card {
+  top: 50px;
+  margin-left: 20px;
+  position: relative;
+  width: 120px;
+  display: inline-block;
+}
+
+.mat-card {
+  top: 50px;
+  margin-left: 20px;
+  width: 90%;
+  position: relative;
+  width: 120px;
+  display: inline-block;
+}
+
+.inline {
+  top: 20px;
+  position: relative;
+}

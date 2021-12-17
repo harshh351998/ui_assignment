@@ -1,0 +1,17 @@
+<app-nav> </app-nav>
+<app-header> </app-header>
+
+<mat-form-field class="mat-form-field">
+  <input matInput placeholder="Search" type="text" #myInput [(ngModel)]="firstname" (input)="searchUsers()">
+  <mat-icon class="cursor-pointer" matSuffix>search</mat-icon>
+</mat-form-field>
+
+<div class="mat-card-div">
+  <mat-card *ngFor="let user of users" class="mat-card">
+
+    <mat-card-actions class="card-footer">
+      {{user.firstName}} {{user.lastName}} <br>
+      ( {{user.role}} ) <br>
+    </mat-card-actions>
+  </mat-card>
+</div>
